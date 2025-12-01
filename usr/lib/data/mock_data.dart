@@ -8,7 +8,7 @@ class MockData {
       TradingSignal(
         id: '1',
         assetName: 'EUR/USD',
-        assetIcon: '€/$',
+        assetIcon: '€/\$', // Escaped $
         action: 'CALL',
         time: now.add(const Duration(minutes: 2)),
         confidence: 0.99, // 1000% sure shot
@@ -38,7 +38,7 @@ class MockData {
       TradingSignal(
         id: '4',
         assetName: 'USD/BRL',
-        assetIcon: '$/R\$',
+        assetIcon: '\$/R\$', // Escaped $
         action: 'PUT',
         time: now.subtract(const Duration(minutes: 10)),
         confidence: 0.98,
